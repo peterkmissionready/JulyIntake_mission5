@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 version: "3.8"
 services:
   frontend:
@@ -17,4 +18,25 @@ services:
     volumes:
      - mission5:/data/db
 volumes:
+=======
+version: "3.8"
+services:
+  frontend:
+    build: ./frontend
+    ports:
+      - 3000:3000
+  backend:
+    build: ./backend
+    ports:
+      - 3001:3001
+    environment:
+      - MYDATA_DB_URI=mongodb://database/mission5
+  database:
+    image: mongo:4.0-xenial
+    ports:
+      - 27018:27017
+    volumes:
+     - mission5:/data/db
+volumes:
+>>>>>>> 7559f16 (Test pushing works on my end.)
   mission5:
