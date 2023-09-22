@@ -4,8 +4,12 @@ const Message = require("../models/Message")
 
 const House = require("../models/house")
 
+require('dotenv').config();
+
+
 mongoose
-.connect(`mongodb://localhost:27018/mongo`, { useNewUrlParser: true })
+.connect(process.env.MYDATA_DB_URI_TO_SEED_TO_RUN_DOCKERCOMPOSE, { useNewUrlParser: true })//run this seed if you want docker to fetch data from here.
+// .connect(process.env.MYDATA_DB_URI, { useNewUrlParser: true })//run this seed if you want npm to fetch data from here.
 .then(
   () => {
         console.log('MongoDB Connected')

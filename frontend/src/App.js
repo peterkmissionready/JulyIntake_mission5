@@ -1,6 +1,5 @@
 import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
-import MyDataList from "./components/data-list"
 import MetroNavBar from "./components/navbar";
 import PropertyCard from "./components/propertyCard";
 import ReviewsCarousel from "./components/reviewsCarousel";

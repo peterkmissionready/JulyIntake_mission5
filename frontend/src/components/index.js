@@ -4,7 +4,7 @@ function Index(props) {
   const [message, setMessage] = useState([]);
   useEffect(() => {
     // console.log(props);
-    const apiUrl = `http://localhost:8000/?${props}`;
+    const apiUrl = `http://localhost:3001/?${props}`;
     const fetchData = async () => {
       try {
         const response = await fetch(apiUrl);

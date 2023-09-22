@@ -3,7 +3,6 @@ const express = require('express');
 const cors = require('cors');
 
 
-const router = require('./routes/index');
 const House = require('./models/house');
 const Message = require('./models/Message');
 

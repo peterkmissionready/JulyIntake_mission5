@@ -14,7 +14,7 @@ function Page1(props) {
     ascBy=params.get("asc");
     descBy=params.get("desc");
 
-    let apiUrl = `http://localhost:8000/houses?${props}`;
+    let apiUrl = `http://localhost:3001/houses?${props}`;
     if(ascBy){
       apiUrl+="&asc="+ascBy;
     }else if(descBy){
