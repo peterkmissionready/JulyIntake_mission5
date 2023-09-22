@@ -1,0 +1,30 @@
+Files I added.
+backend/.gitignore
+backend/index.js
+backend/server.js
+backend/model/*
+backend/db/*
+frontend/src/images/*
+frontend/src/App2.js
+frontend/src/components/Body.js
+frontend/src/components/index.js
+frontend/src/Page1.js
+frontend/src/HouseCard.jsx
+frontend/src/ResultsLayoutStyle.css
+frontend/src/SearchResultsStyle.css
+
+Files I modified.
+backend/.env
+backend/package.json
+frontend/src/index.js
+frontend/src/components/navbar.js
+frontend/src/App.js
+docker-compose.yml
+
+files I deleted
+frontend/src/components/data-list.js
+frontend/src/services*
+frontend/src/http-common.js
+backend/api*
+backend/data*
+backend/dao*
