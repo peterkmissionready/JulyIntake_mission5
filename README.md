@@ -156,8 +156,8 @@ Just type `docker-compose up` in the repository directory which you git cloned t
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Authors
--Peter Kim (peterk@missionreadyhq.com)</br>
--Omar Abouelkheir (omar@missionreadyhq.com)</br>
+-Peter Kim (peterk@missionreadyhq.com)<br/>
+-Omar Abouelkheir (omar@missionreadyhq.com)<br/>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
