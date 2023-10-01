@@ -30,9 +30,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+
 
   <h3 align="center">Mission 5 Residential Rental Properties Re-design Project</h3>
 
@@ -82,8 +80,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+</br>
+<img src="screenshot.jpg" style="width:70vw;height:52.5vw"></img><br/>
 
 This is a Residential Rental Properties Re-design Project- a Mission 5 assignment for Mission Ready School.
 
