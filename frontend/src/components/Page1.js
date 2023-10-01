@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "../SearchResultsStyle.css";
 import "../ResultsLayoutStyle.css";
 import HouseCard from "../HouseCard";
+import MetroNavBar from "./navbar";
 
 // export default Index;
 let ascBy=null;
@@ -20,13 +21,7 @@ function Page1(props) {
     }else if(descBy){
       apiUrl+="&desc="+descBy;
     }
-    // const apiUrl = `http://localhost:8000/houses`;
     console.log(apiUrl);
-
-    // if(ascBy==="pricePerWeek"){
-
-      // document.querySelector('#sortOptions').querySelector('option')[3].selected = 'selected';
-    // }
 
 
     const fetchData = async () => {
@@ -71,9 +66,11 @@ function Page1(props) {
     } else if(event.target.value==="highestPrice"){
       window.location.href="http://localhost:3000/page1?desc=pricePerWeek";
     }
-    // setSelected(event.target.value);
   };
-  return <div>
+  return <div className="bg-white h-full">
+  <div className="mx-24 my-6">
+    <MetroNavBar/>
+    <div>
     <div className="searchFilterPane">
       <table>
         <tbody>
@@ -118,16 +115,13 @@ function Page1(props) {
     {houses.map((house, index)=> {
       return <HouseCard house={house} key={index}/>
     })}
-{/*       <div class="houseItem"></div>
-      <div class="houseItem"></div> */}
-      {/* <div class="houseItem"></div> */}
 
+    </div>
+    </div>
     </div>
   
   </div>;
 }
 
-// function changeSortMethod(){
-//   console.log("reached here2");
-// }
+
 export default Page1;
